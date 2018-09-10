@@ -1,0 +1,11 @@
+div.book-meeting {width:1000px;height:600px;margin:auto;}
+* {padding:3px;}
+div#cities {display:none;}
+span#timezone, div#timezones {border-style:solid;border-width:2px 2px 0px 2px;border-color:dodgerblue;}
+div#timezones2 {border-style:solid;border-width:0px 2px 0px 2px;border-color:dodgerblue;}
+div.tabborder {border-style:solid;border-width:0px 0px 2px 0px;border-color:#f4f4f4;padding:0px 0px 3px 0px;}
+div.selectedvalues, div.inputArea {display:inline-block;max-width:100px;}
+div#timezones {height:3em;overflow:hidden;}
+div.mainselect {width:700px;}
+div.inputedselect {display:inline-block;max-width:100px;}
+

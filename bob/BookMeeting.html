@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>约会呢</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="bookmeeting.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.21/moment-timezone-with-data.min.js"></script>
+</head>
+<body>
+			<div id="hidden-book-meeting" class="book-meeting">
+				<div>comfort time block: from 
+					<select name="starthour" id="starthour" autofocus></select> : 
+					<select name="startminute">
+						<option value="0" selected>00</option>
+						<option value="30">30</option>
+					</select>
+						 to
+					<select name="endhour" id="endhour"></select>  : 
+					<select name="endminute">
+						<option value="0" selected>00</option>
+						<option value="30">30</option>
+					</select>
+				</div>
+				<div>
+					<span>Meeting Duration: </span>
+					<select name="duration" id="duration"></select>
+					<span>hours</span>
+				</div>
+				<div class="mainselect">
+					<div>
+						select <div class="tabborder" style="display:inline;width:50px;"><span id="timezone">Timezone</span></div> <span id="city">City</span>
+					</div>
+					<div id="timezones">
+						<div class="selectedvalues" id="selectedtimezonevalues">
+							<span class="glyphicon glyphicon-remove"></span>
+						</div>
+						<div class="inputArea" id="inputArea">
+							<input type="text">
+						</div>
+					</div>
+					<div id="timezones2">
+						<select multiple name="timezonevalues" id="timezonevalues"></select>
+					</div>
+					
+					<div id="cities">
+						<select multiple name="cityvalues" id="cityvalues"></select>
+					</div>
+				</div>
+				<button>Intelligent Generate!</button><br>
+				<div id="hidden-result" style="display:table">
+					Candidate time block:<br>
+					<div style="background-color:#f00;margin:0 10px 0 0;border:1px solid #000;width:20px;height:20px;float:left"></div>
+					<div style="background-color:#0f0;margin:0 10px 0 0;border:1px solid #000;width:20px;height:20px;float:left"></div>
+					<div style="background-color:#00f;margin:0 10px 0 0;border:1px solid #000;width:20px;height:20px;float:left"></div>
+					<div style="background-color:#ff0;margin:0 10px 0 0;border:1px solid #000;width:20px;height:20px;float:left"></div>
+				</div>
+			</div>
+	<div class="tail" style="width:1000px;margin:50px auto;padding:5px;color:#666;font-size:12px;border-top:1px solid #666">
+	© Xiya 出品 版权所有
+	</div>
+</body>
+
+<script src="bookmeeting.js"></script>
+</html>

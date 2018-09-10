@@ -36,6 +36,17 @@ function hideHiddenSculptButt() {
 	document.getElementById('adv-content').style.display='block';
 }
 
+function showHiddenCV() {
+	document.getElementById('hidden-CV').style.display='block';
+	document.getElementById('adv-content').style.display='none';
+}
+
+function hideHiddenCV() {
+	document.getElementById('hidden-CV').style.display='none';
+	document.getElementById('adv-content').style.display='block';
+}
+
+
 function test(){
 	var ele=document.getElementById('material');
     if ( window.getComputedStyle(ele, null).getPropertyValue("display") === 'none') {
@@ -81,6 +92,8 @@ function carousel_specific_showone_clear(advLiGroup,index){
 	adv_show=setInterval(carousel,2000);
 }
 
+
+
 onload=function(){
 var advLiGroup=document.getElementsByClassName('advertisement-nav')[0].getElementsByTagName('li');
 advLiGroup[0].addEventListener('mouseover',function(){carousel_specific_showone(0);slideIndex=1;});
@@ -93,4 +106,5 @@ advLiGroup[3].addEventListener('mouseover',function(){carousel_specific_showone(
 advLiGroup[3].addEventListener('mouseout',function(){carousel_specific_showone_clear(advLiGroup,3)});
 advLiGroup[4].addEventListener('mouseover',function(){carousel_specific_showone(4);slideIndex=0;});
 advLiGroup[4].addEventListener('mouseout',function(){carousel_specific_showone_clear(advLiGroup,4)});
+
 }
